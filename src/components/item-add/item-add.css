@@ -1,0 +1,13 @@
+.item-add {
+    align-items: flex-end;
+    margin-top: 8px;
+}
+
+.item-add input {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+
+.item-add button {
+    height: 100%;
+}
