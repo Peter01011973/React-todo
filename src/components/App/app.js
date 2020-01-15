@@ -22,6 +22,7 @@ export default class App extends Component {
             scale: 'c',
             temperature: 0
         }
+       
         this.temperatureCChangeHandler = this.temperatureCChangeHandler.bind(this)
         this.temperatureFChangeHandler = this.temperatureFChangeHandler.bind(this)
     }
@@ -126,6 +127,7 @@ export default class App extends Component {
     onEditCompliteHandler = (label, id) => {this.setState( ({todoList}) => {return {todoList: this.toggleProperty(todoList, id, 'label', label)}})}
 
     render() {
+        
         const {scale, search, filter} = this.state
         const celsius = scale === 'f' ? this.state.temperature * 2 : this.state.temperature
         const fahrenheit = scale === 'c' ? this.state.temperature / 2 : this.state.temperature   
